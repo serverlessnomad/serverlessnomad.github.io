@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Serverless Nomad"
+    },
+    "motivations": {
+      "@value": "I have been part of the cryptocurrency space for many years, witnessing the evolution of blockchain technology and its potential to reshape industries. With an extensive background in cybersecurity, having worked for financial institutions and led cybersecurity teams in the banking sector, I am deeply passionate about ensuring the security and integrity of decentralized systems. As a DRep, I want to leverage my professional experience to advocate for secure, transparent, and innovative solutions in Cardano's governance. I am motivated by the vision of empowering individuals and communities through blockchain technology, and I believe my leadership experience in both the cybersecurity and cryptocurrency domains positions me to contribute meaningfully to Cardano's future."
+    },
+    "objectives": {
+      "@value": "As a DRep, I am committed to fostering decentralization and promoting community growth through true utility. I believe in the power of decentralized governance to drive innovation and shape a fairer and more transparent financial ecosystem. My objective is to ensure that the Cardano blockchain remains a platform that empowers its users and developers, providing real-world utility and value to all participants. I aim to contribute to the long-term success of Cardano by supporting proposals that align with the principles of decentralization, sustainability, and community-driven growth."
+    },
+    "paymentAddress": {
+      "@value": "addr1q839rzz9mpg7xmvkmc57r8fj3qexdtwhspg3f7eenncgantlzvnx0njge2s0gce98v5gxpvzqltm4l6u2mjy7pfmtu5skygja9"
+    },
+    "qualifications": {
+      "@value": "I bring a wealth of experience to the DRep role, including serving as a Chief Technology Officer at a penetration testing company and currently leading the cybersecurity division of a major bank in Asia. My extensive experience in cybersecurity, particularly within the financial sector, equips me with the skills to evaluate and contribute to proposals that prioritize security, scalability, and sustainable development in the blockchain ecosystem. Additionally, my active involvement in the cryptocurrency space provides me with a strong understanding of the needs of the Cardano community and the potential for blockchain technology to drive societal change."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/travishoyt/"
+        }
+      }
+    ]
+  }
+}
